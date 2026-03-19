@@ -1,11 +1,19 @@
 {
-  "project_id": "luban-ai-news",
+  "task_id": "task-20260319-212900-luban-news",
   "title": "鲁班 AI 新闻 - 每日自动获取",
-  "status": "active",
-  "repository": "yyn0210/Hello-World",
-  "target_dir": "luban-ai-news/",
-  "created_at": "2026-03-19T21:34:00+08:00",
-  "cron_id": "8bc419cf-91ef-4cc1-8bf6-3c04fbb219c2",
+  "type": "infinite",
+  "status": "assigned",
+  "assigned_to": "jiagou1",
+  "room_id": "!9S2rvHXGlT8aE0fJSo:matrix-local.hiclaw.io:18080",
+  "created_at": "2026-03-19T21:29:00+08:00",
+  "assigned_at": "2026-03-19T21:29:00+08:00",
   "schedule": "0 0 * * *",
-  "timezone": "Asia/Shanghai"
+  "timezone": "Asia/Shanghai",
+  "spec_file": "spec.md",
+  "context": {
+    "project": "luban-ai-news",
+    "repository": "yyn0210/luban-ai-news",
+    "pages_url": "https://yyn0210.github.io/luban-ai-news/",
+    "cron_job_id": "c4aef863-8f94-4a10-bbbf-9eb97a5bc7c7"
+  }
 }
