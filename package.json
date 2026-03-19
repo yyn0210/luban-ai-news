@@ -9,10 +9,16 @@
     "docs:preview": "vitepress preview docs",
     "fetch-news": "node scripts/fetch-news.js"
   },
+  "keywords": ["ai", "news", "hacker-news", "reddit", "vitepress"],
+  "author": "HiClaw",
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0"
+    "vitepress": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

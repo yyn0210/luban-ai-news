@@ -1,0 +1,23 @@
+{
+  "hackerNews": {
+    "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+    "itemUrl": "https://hacker-news.firebaseio.com/v0/item/",
+    "limit": 30,
+    "keywords": ["AI", "artificial intelligence", "machine learning", "ML", "neural", "deep learning", "LLM", "GPT", "transformer"]
+  },
+  "reddit": {
+    "url": "https://www.reddit.com/r/MachineLearning/hot.json",
+    "limit": 25,
+    "keywords": ["AI", "machine learning", "deep learning", "neural network", "LLM", "GPT"]
+  },
+  "output": {
+    "dir": "./news",
+    "format": "markdown"
+  },
+  "github": {
+    "owner": "yyn0210",
+    "repo": "Hello-World",
+    "branch": "main",
+    "path": "luban-ai-news/news"
+  }
+}

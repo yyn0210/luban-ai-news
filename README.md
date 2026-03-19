@@ -1,82 +1,52 @@
-# 鲁班 AI 新闻
+# 鲁班 AI 新闻 - 每日自动获取
 
-每日 AI 行业新闻聚合，自动追踪最新 AI 技术动态。
+自动从 Hacker News 和 Reddit 采集 AI/ML 相关新闻，每日生成 Markdown 报告并提交到 GitHub。
 
-## 功能特性
+## 功能
 
-- 📅 **每日更新** - 每天 0 点自动获取当天 AI 新闻
-- 🤖 **多源采集** - 从 Hacker News、Reddit 等源获取
-- 📝 **自动生成** - 自动生成 Markdown 格式新闻
-- 📦 **VitePress** - 基于 VitePress 的静态网站
-- 🚀 **GitHub Pages** - 可部署到 GitHub Pages
+- 📰 从 Hacker News 获取 Top 30 热门新闻
+- 🤖 从 Reddit r/MachineLearning 获取热门帖子
+- 🏷️ 自动过滤 AI/ML 相关关键词
+- 📝 生成 Markdown 格式的日报
+- 🚀 自动提交到 GitHub
 
-## 快速开始
-
-### 安装依赖
+## 安装
 
 ```bash
 npm install
 ```
 
-### 开发模式
+## 使用
 
-```bash
-npm run docs:dev
-```
-
-### 构建
-
-```bash
-npm run docs:build
-```
-
-### 获取新闻
-
+### 手动运行
 ```bash
 npm run fetch-news
 ```
 
-## 目录结构
+### 定时任务
+已配置 Cron，每天 0:00（北京时间）自动执行。
 
+## 输出
+
+新闻文件保存在 `news/` 目录：
 ```
-luban-ai-news/
-├── docs/
-│   ├── .vitepress/
-│   │   └── config.js
-│   ├── news/
-│   │   ├── archive.md
-│   │   └── YYYYMMDD.md
-│   └── index.md
-├── scripts/
-│   └── fetch-news.js
-├── package.json
-└── README.md
+news/
+├── 2026-03-19.md
+├── 2026-03-20.md
+└── ...
 ```
 
-## 定时任务
+## 配置
 
-项目配置了每天 0 点自动执行新闻获取：
+编辑 `config.json` 自定义：
+- 新闻数量
+- 过滤关键词
+- 输出路径
 
-```bash
-# crontab 配置
-0 0 * * * cd /path/to/luban-ai-news && npm run fetch-news
-```
+## GitHub 提交
 
-## 部署到 GitHub Pages
+自动提交到：yyn0210/Hello-World/luban-ai-news/news/
 
-1. 构建项目：
-```bash
-npm run docs:build
-```
+---
 
-2. 推送 `docs/.vitepress/dist` 目录到 GitHub Pages 分支
-
-## 技术栈
-
-- [VitePress](https://vitepress.dev/) - Vue 驱动的静态网站生成器
-- Node.js - 运行环境
-- node-fetch - HTTP 请求
-
-## License
-
-MIT
+**鲁班 AI 新闻** - 让 AI 资讯触手可及 📰🤖
